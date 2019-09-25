@@ -1,9 +1,9 @@
 console.log("Up and running!");
 
-var cardOne = "queen";
+/*var cardOne = "queen";
 var cardTwo ="king";
 var cardThree = "";
-var cardFour = "";
+var cardFour = "";*/
 
 console.log("User flipped " + cardOne);
 console.log("User flipped " + cardTwo);
@@ -33,13 +33,13 @@ suit:'diamonds',
 cardImage:'images/king-of-diamonds.png'
 }
 
-];
+];*/
 
-//var cards = ["queen","queen", "king", "king"];
+var cards = ["queen","queen", "king", "king"];
 
 var  cardsInPlay = new Array();
 
-function checkForMatch()
+/*function checkForMatch()
 {
 if (cardsInPlay[0] === cardsInPlay[1]) {
   console.log("You found a match!");
@@ -76,19 +76,19 @@ createBoard.appendChild(cardElement);
 	}
 
 console.log(cards[cardId].cardImage);
-this.setAttribute(src, cardImage)
+this.setAttribute(src, cardImage)*/
 
 
-	/*var cardOne = cards[0];
+	var cardOne = cards[0];
 cardsInPlay.push(cardOne);
 console.log("User flipped queen");
 
 var cardTwo = cards[2];
 cardsInPlay.push(cardTwo);
-console.log("User flipped king");*/
+console.log("User flipped king");
 
 
-/*if (cardsInPlay.length === 2) 
+if (cardsInPlay.length === 2) 
 {
 	if (cardsInPlay[0] === cardsInPlay[1] )
 {
@@ -103,7 +103,7 @@ else
 
 }
 
-}
+/*}
 
 createBoard();
 */
