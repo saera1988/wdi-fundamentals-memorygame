@@ -1,4 +1,4 @@
-console.log("Up and running!");
+
 
 
 
@@ -34,15 +34,9 @@ var cards = ["queen","queen", "king", "king"];
 
 var  cardsInPlay = new Array();
 
-var cardOne=cards[0];
-cardsInPlay.push('cardOne');
-console.log("User flipped queen");
 
-var cardTwo=cards[2];
-cardsInPlay.push('cardTwo');
-console.log("User flipped king");
 
-/*function checkForMatch()
+function checkForMatch()
 {
 if (cardsInPlay[0] === cardsInPlay[1]) {
   console.log("You found a match!");
@@ -54,48 +48,23 @@ if (cardsInPlay[0] === cardsInPlay[1]) {
 
 function flipCard (cardId)
 {
-    this.getAttribute('attribute-we-want-to-get-goes-here');
 
-    cards[cardId];
-	console.log("User flipped" +""+cards[cardId].rank);
-
-	cardsInPlay.push(cards[cardId].rank);
-
-	console.log("User flipped" +""+ cards[cardId].cardImage);
-	console.log("User flipped" +""+ cards[cardId].suit);
-
-	checkForMatch ();
-
-}
 	
-	/*function createBoard() {
-
-	for (var i = 0; i < cards.length; i++) {
-
-		var cardElement = document.createElement('img');
-    cardElement.setAttribute('attributeName', 'attributeValue');
-    cardElement.setAttribute('data-id', '');
-cardElement.addEventListener("click", flipCard());
-createBoard.appendChild(cardElement);
-}
-	}
-
-console.log(cards[cardId].cardImage);
-this.setAttribute(src, cardImage)*/
+console.log("User flipped " + cards[cardId]);
+cardsInPlay.push(cards[cardId]);
 
 
 
 
-
-if (cardsInPlay.length === 2) 
-{
-	if (cardsInPlay[0] === cardsInPlay[1] )
-{
+if (cardsInPlay.length === 2) {
+	if (cardsInPlay[0] === cardsInPlay[1] ){
   alert("You found a match!");
-    // condition is true
+}else{alert("Sorry, try again.");} 
 }
-else
-{
-    alert("Sorry, try again.");}
-    // condition is false
+
+
+checkForMatch();
 }
+
+flipCard(cards[0]);
+flipCard(cards[2]);
