@@ -1,12 +1,7 @@
 console.log("Up and running!");
 
-/*var cardOne = "queen";
-var cardTwo ="king";
-var cardThree = "";
-var cardFour = "";*/
 
-console.log("User flipped " + cardOne);
-console.log("User flipped " + cardTwo);
+
 
 /*var cards = [
 {
@@ -39,6 +34,14 @@ var cards = ["queen","queen", "king", "king"];
 
 var  cardsInPlay = new Array();
 
+var cardOne=cards[0];
+cardsInPlay.push('cardOne');
+console.log("User flipped queen");
+
+var cardTwo=cards[2];
+cardsInPlay.push('cardTwo');
+console.log("User flipped king");
+
 /*function checkForMatch()
 {
 if (cardsInPlay[0] === cardsInPlay[1]) {
@@ -49,7 +52,7 @@ if (cardsInPlay[0] === cardsInPlay[1]) {
 }
 
 
-function flipCard ()
+function flipCard (cardId)
 {
     this.getAttribute('attribute-we-want-to-get-goes-here');
 
@@ -62,8 +65,10 @@ function flipCard ()
 	console.log("User flipped" +""+ cards[cardId].suit);
 
 	checkForMatch ();
+
+}
 	
-	function createBoard() {
+	/*function createBoard() {
 
 	for (var i = 0; i < cards.length; i++) {
 
@@ -79,13 +84,7 @@ console.log(cards[cardId].cardImage);
 this.setAttribute(src, cardImage)*/
 
 
-	var cardOne = cards[0];
-cardsInPlay.push(cardOne);
-console.log("User flipped queen");
 
-var cardTwo = cards[2];
-cardsInPlay.push(cardTwo);
-console.log("User flipped king");
 
 
 if (cardsInPlay.length === 2) 
@@ -97,13 +96,6 @@ if (cardsInPlay.length === 2)
 }
 else
 {
-    alert("Sorry, try again.");
+    alert("Sorry, try again.");}
     // condition is false
 }
-
-}
-
-/*}
-
-createBoard();
-*/
